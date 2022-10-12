@@ -7,8 +7,16 @@ fn second_function() {
     // this will be dealing with datatypes
     // first thing will be scalar types
     // integers
-    let _x = -6;
-    println!("Second function.");
+    let x = -6;
+    printer(x);
+    let x: f64 = -10.09;
+    floating_print(x);
+    let x: bool = true;
+    boolean_print(x);
+    let x: char = 'a';
+    char_print(x);
+
+    // Time to play with compound types
 }
 
 fn first_function() {
@@ -27,5 +35,17 @@ fn first_function() {
 }
 
 fn printer(x: i64) {
+    println!("x is: {}", x);
+}
+
+fn floating_print(x: f64) {
+    println!("x is: {}", x);
+}
+
+fn boolean_print(x: bool) {
+    println!("x is: {}", x);
+}
+
+fn char_print(x: char) {
     println!("x is: {}", x);
 }
