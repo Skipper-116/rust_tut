@@ -17,6 +17,12 @@ fn second_function() {
     char_print(x);
 
     // Time to play with compound types
+    let mut tup = (500, 6.4, 1);
+    tup.0 = -500;
+    printer(tup.0);
+    let mut arr = [1, 2, 3, 4, 5];
+    arr[0] = 10;
+    printer(arr[0]);
 }
 
 fn first_function() {
